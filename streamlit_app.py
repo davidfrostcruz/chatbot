@@ -3,11 +3,11 @@ import replicate
 import os
 
 # App title
-st.set_page_config(page_title="Math Chatbot")
+st.set_page_config(page_title="David Math Chatbot")
 
 # Replicate Credentials
 with st.sidebar:
-    st.title('🦙💬 Llama 2 Chatbot')
+    st.title('David Math Chatbot')
     if 'REPLICATE_API_TOKEN' in st.secrets:
         st.success('API key already provided!', icon='✅')
         replicate_api = st.secrets['REPLICATE_API_TOKEN']
