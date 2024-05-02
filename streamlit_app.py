@@ -3,7 +3,7 @@ import replicate
 import os
 
 # App title
-st.set_page_config(page_title="David Math Chatbot")
+st.set_page_config(page_title="David Frost Math Chatbot")
 
 # Replicate Credentials
 with st.sidebar:
