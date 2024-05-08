@@ -1,6 +1,9 @@
 import streamlit as st
 import replicate
 import os
+import pickle
+import numpy as np
+import pandas as pd
 
 # App title
 st.set_page_config(page_title="David Frost Math Chatbot")
