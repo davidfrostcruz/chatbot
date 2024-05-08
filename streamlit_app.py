@@ -1,6 +1,7 @@
 import streamlit as st
 import replicate
 import os
+import requests
 import pickle
 import numpy as np
 import pandas as pd
