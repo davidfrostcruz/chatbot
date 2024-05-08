@@ -8,7 +8,7 @@ import pandas as pd
 import sklearn
 
 # Model
-model = pickle.load(open('clf.pkl', 'rb'))
+model = pickle.load(open('https://github.com/davidfrostcruz/chatbot/blob/master/clf.pkl', 'rb'))
 cols=['age','workclass','education','marital-status','occupation','relationship','race','gender','capital-gain','capital-loss',
       'hours-per-week','native-country']    
 
