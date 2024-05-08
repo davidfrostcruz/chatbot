@@ -2,6 +2,5 @@ streamlit>=1.26.0
 replicate
 pandas
 numpy
-sklearn
 requests
 pickle
