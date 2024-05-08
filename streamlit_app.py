@@ -5,6 +5,11 @@ import pickle
 import numpy as np
 import pandas as pd
 
+# Model
+model = pickle.load(open('clf.pkl', 'rb'))
+cols=['age','workclass','education','marital-status','occupation','relationship','race','gender','capital-gain','capital-loss',
+      'hours-per-week','native-country']    
+
 # App title
 st.set_page_config(page_title="David Frost Math Chatbot")
 
