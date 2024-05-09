@@ -24,10 +24,17 @@ with st.sidebar:
         else:
             st.success('Proceed to entering your prompt message!', icon='👉')
     os.environ['REPLICATE_API_TOKEN'] = replicate_api
+# Left panel
     st.subheader('My info')
     age = st.text_input("Age","0") 
     workclass = st.selectbox("Working Class", ["Federal-gov","Local-gov","Never-worked","Private","Self-emp-inc","Self-emp-not-inc","State-gov","Without-pay"]) 
     education = st.selectbox("Education",["10th","11th","12th","1st-4th","5th-6th","7th-8th","9th","Assoc-acdm","Assoc-voc","Bachelors","Doctorate","HS-grad","Masters","Preschool","Prof-school","Some-college"])  
+    if st.button("Predict"): 
+        features = [[age,workclass,education]]
+        data = {'age': int(age), 'workclass': workclass, 'education': education}
+        print(data)
+        df=pd.DataFrame([list(data.values())], columns=['age','workclass','education'])
+
     st.subheader('Models and parameters')
     selected_model = st.sidebar.selectbox('Choose a Llama model', ['Llama3-7B', 'Llama2-13B'], key='selected_model')
     if selected_model == 'Llama3-7B':
